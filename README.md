@@ -47,7 +47,7 @@ In the above simulation i have done a Write-Read-write operation. Red one is my 
     
   **Simulation Result**
   
-  
+  ![SRAM](https://user-images.githubusercontent.com/71965706/94521572-e99b3d80-024b-11eb-967b-eef5a0cfa152.png)
   
 
   
