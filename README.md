@@ -19,7 +19,7 @@
   The SRAM block consists of 8 major blocks:The bit-cell array, Address Decoder, Sense Amplifier, Word-line driver, Bit-cell precharge circuit, Writ Driver, Control logic and column MUX. In this project i have designed and characterised the Bit-cell array that all the devices of SRAM-6T cell using NGSpice tool with 0.5um SCMOS technology from MOSIS.
   ## Pre-Layout
    In this section I have represented the DC analysis and Transient Analysis of the 6T-SRAM cell which i have simulated using NGSpice.
-  - ### 6T-SRAM Memory cell
+   ### 6T-SRAM Memory cell
   **Circuit Diagram**
   
   
@@ -29,3 +29,9 @@
   **DC Analysis**
   
   ![Dc sim](https://user-images.githubusercontent.com/71965706/94514148-1cd6d000-023e-11eb-8fc0-00866ce9f399.png)
+
+  From the Dc Analysis we can get the operating point of the CMOS Inverters and we can also get the Design Margin for the pull-up and pull-down device by performing write operatrion. 
+  
+  **Circuit Daigram of SRAM cell with all Parasitcs**
+  
+  
