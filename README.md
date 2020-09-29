@@ -21,5 +21,11 @@
    In this section I have represented the DC analysis and Transient Analysis of the 6T-SRAM cell which i have simulated using NGSpice.
   ### 6T-SRAM Memory cell
   **Circuit Diagram**
+  
+  
   ![SRAM_6t](https://user-images.githubusercontent.com/71965706/94513996-b6ea4880-023d-11eb-81be-3733cea20c55.png)
+  
+  
+  **DC Analysis**
+  
   
