@@ -68,5 +68,7 @@ The write drivers send the input data signals onto the bit-lines for a write ope
 
 ## Simulation of 6T-SRAM cell with write driver and sense amplifier
 
+![clk sync](https://user-images.githubusercontent.com/71965706/94522882-fae54980-024d-11eb-91bf-f5a0534491ce.png)
+
 
   
