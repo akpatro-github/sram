@@ -40,6 +40,8 @@
   
   **Transient Analysis**
   
+  ![SRAM_sim](https://user-images.githubusercontent.com/71965706/94520666-472e8a80-024a-11eb-9492-f35dc69cfd40.png)
+  
   
 
   
