@@ -7,7 +7,8 @@
   - Precharge circuit
   - Sense Amplifier
   - Write Driver
-  
+- Installing and simulating on NGSpice
+- Future work  
   
   ## SRAM Design
     The project is generally focused on the design of 1k 32-bit 6T SRAM memory using [OpenRAM](https://www.openidentityplatform.org/openam) compiler.For the design of the custom memory array, OpenRAM memory compiler takes in Spice nelist file and Layout file to generate a SRAM memory cell.
@@ -70,5 +71,14 @@ The write drivers send the input data signals onto the bit-lines for a write ope
 
 ![clk sync](https://user-images.githubusercontent.com/71965706/94522882-fae54980-024d-11eb-91bf-f5a0534491ce.png)
 
+### Installing and Simulating on NGSpice
+To Download NGSpice on your System
+**Clone the Repo**
+'git clone https://www.github.com/silicon-vlsi/project2020'
+
+
+## Future work
+- To create the layout using Magic.
+- And to compile the whole circuit using the OpenRAM compiler. 
 
   
