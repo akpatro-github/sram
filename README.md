@@ -3,7 +3,7 @@
 - SRAM Desgin
 - Block Diagram
 - Pre-Layout
-  - 1k 32-bit 6T-SRAM Memory cell
+  - 6T-SRAM Memory cell
   - Precharge circuit
   - Sense Amplifier
   - Write Driver
@@ -15,3 +15,9 @@
      - For more information on OpenRAM compiler please [click here](https://github.com/mguthaus/OpenRAM/blob/master/OpenRAM_ICCAD_2016_paper.pdf "OpenRAM")
    ## Block Diagram
 ![block dia](https://user-images.githubusercontent.com/71965706/94511998-881da380-0238-11eb-91c3-ffe9e7b702da.png)
+  The SRAM block consists of 8 major blocks:The bit-cell array, Address Decoder, Sense Amplifier, Word-line driver, Bit-cell precharge circuit, Writ Driver, Control logic and column MUX. In this project i have designed and characterised the Bit-cell array that all the devices of SRAM-6T cell using NGSpice tool with 0.5um SCMOS technology from MOSIS.
+  ## Pre-Layout
+   In this section I have represented the DC analysis and Transient Analysis of the 6T-SRAM cell which i have simulated using NGSpice.
+  ### 6T-SRAM Memory cell
+  **Circuit Diagram**
+  
