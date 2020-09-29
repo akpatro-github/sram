@@ -50,10 +50,19 @@ In the above simulation i have done a Write-Read-write operation. Red one is my 
   ![SRAM](https://user-images.githubusercontent.com/71965706/94521572-e99b3d80-024b-11eb-967b-eef5a0cfa152.png)
   
   ### Sense Amlifier
-    Sense Amplifier generally used to detect the node voltage stored in the memory. It will be on at the time of Read operation.
-   **Circuit Diagram**
-   
-   
   
+  Sense Amplifier generally used to detect the node voltage stored in the memory. It will be on at the time of Read operation. I have used a latch based Sense amplifier in my design.
+  
+  **Circuit Diagram**
+   
+   
+![Sense](https://user-images.githubusercontent.com/71965706/94522258-ff5d3280-024c-11eb-9a69-a9c65f69bedb.png)
+  
+### Write Driver
+
+The write drivers send the input data signals onto the bit-lines for a write operation. The write drivers are tri-stated so that they can be placed between the column multiplexer/memory array and the sense amplifiers. There is one write driver for each input data bit.
+
+**Circuit Diagram**
+
 
   
