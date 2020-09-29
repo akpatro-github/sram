@@ -34,4 +34,7 @@
   
   **Circuit Daigram of SRAM cell with all Parasitcs**
   
+  ![sram_parasitcs](https://user-images.githubusercontent.com/71965706/94519493-3715ab80-0248-11eb-9020-a3098cc748f5.png)
+
+
   
