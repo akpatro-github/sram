@@ -43,11 +43,17 @@
   ![SRAM_sim](https://user-images.githubusercontent.com/71965706/94520666-472e8a80-024a-11eb-9492-f35dc69cfd40.png)
   
 In the above simulation i have done a Write-Read-write operation. Red one is my input signal to Pre-charge circuit. Blue colur represents the word line signal , next 2 signals represents the bit and complemet bit signal and last two signals represents the internal node volatages which stored in the cell.
-    I have calculated the maximum volatages variation at internal node for the [PVT](https://in.search.yahoo.com/search?fr=mcafee&type=D210IN662G0&p=pvt+corner+in+vlsi) corners.
+    I have calculated the maximum volatages variation at internal node for the [PVT](https://in.search.yahoo.com/search?fr=mcafee&type=D210IN662G0&p=pvt+corner+in+vlsi) corners and for the temperature -40C,25C and 105C.
     
   **Simulation Result**
   
   ![SRAM](https://user-images.githubusercontent.com/71965706/94521572-e99b3d80-024b-11eb-967b-eef5a0cfa152.png)
+  
+  ### Sense Amlifier
+    Sense Amplifier generally used to detect the node voltage stored in the memory. It will be on at the time of Read operation.
+   **Circuit Diagram**
+   
+   
   
 
   
