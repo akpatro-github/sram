@@ -1,4 +1,4 @@
-# Design and simulation of 1k 32-bit 6T-SRAM using NGSpice
+# CMOS SRAM IP in MOSIS 0.5um CMOS Technology
 ## Table of Contents
 - SRAM Desgin
 - Block Diagram
