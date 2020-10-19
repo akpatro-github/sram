@@ -21,7 +21,8 @@
   ## Pre-Layout
   To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal
   
- '''$  sudo apt install -y git
+ '''
+$  sudo apt install -y git
 $  git clone https://github.com/akpatro-github/sram
 $  cd sram
 '''
