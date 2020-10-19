@@ -47,6 +47,9 @@ $  cd sram/pre_layout_netlist/testbench
   ![snm_hold](https://user-images.githubusercontent.com/71965706/96468772-1b4f6500-124a-11eb-842e-e0a1d4b05bab.png)
   
   ***Read SNM***
+  
+  ![snm_hold](https://user-images.githubusercontent.com/71965706/96470720-358a4280-124c-11eb-8b8c-7e52687e59bb.png)
+  
   **Circuit Daigram of SRAM cell with all Parasitcs**
 
   ![sram_parasitcs](https://user-images.githubusercontent.com/71965706/94519493-3715ab80-0248-11eb-9020-a3098cc748f5.png)
