@@ -41,6 +41,12 @@ $  cd sram/pre_layout_netlist/testbench
 
   From the Dc Analysis we can get the operating point of the CMOS Inverters and we can also get the Design Margin for the pull-up and pull-down device by performing write operatrion. 
   
+    ### 6T cell Stability
+  ***Hold SNM***
+  
+  ![snm_hold](https://user-images.githubusercontent.com/71965706/96468772-1b4f6500-124a-11eb-842e-e0a1d4b05bab.png)
+  
+  ***Read SNM***
   **Circuit Daigram of SRAM cell with all Parasitcs**
 
   ![sram_parasitcs](https://user-images.githubusercontent.com/71965706/94519493-3715ab80-0248-11eb-9020-a3098cc748f5.png)
@@ -60,10 +66,7 @@ In the above simulation i have done a Write-Read-write operation. Red one is my 
   
   ![SRAM](https://user-images.githubusercontent.com/71965706/94521572-e99b3d80-024b-11eb-967b-eef5a0cfa152.png)
   
-  ### 6T cell Stability
-  ***Hold SNM***
-  
-  ![snm_hold](https://user-images.githubusercontent.com/71965706/96468772-1b4f6500-124a-11eb-842e-e0a1d4b05bab.png)
+
   
   ### Sense Amlifier
   
