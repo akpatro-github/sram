@@ -41,7 +41,7 @@ $  cd sram/pre_layout_netlist/testbench
 
   From the Dc Analysis we can get the operating point of the CMOS Inverters and we can also get the Design Margin for the pull-up and pull-down device by performing write operatrion. 
   
-    ### 6T cell Stability
+  ### 6T cell Stability
   ***Hold SNM***
   
   ![snm_hold](https://user-images.githubusercontent.com/71965706/96468772-1b4f6500-124a-11eb-842e-e0a1d4b05bab.png)
