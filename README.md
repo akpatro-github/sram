@@ -60,6 +60,11 @@ In the above simulation i have done a Write-Read-write operation. Red one is my 
   
   ![SRAM](https://user-images.githubusercontent.com/71965706/94521572-e99b3d80-024b-11eb-967b-eef5a0cfa152.png)
   
+  ### 6T cell Stability
+  ***Hold SNM***
+  
+  ![snm_hold](https://user-images.githubusercontent.com/71965706/96468772-1b4f6500-124a-11eb-842e-e0a1d4b05bab.png)
+  
   ### Sense Amlifier
   
   Sense Amplifier generally used to detect the node voltage stored in the memory. It will be on at the time of Read operation. I have used a latch based Sense amplifier in my design.
