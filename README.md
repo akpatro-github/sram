@@ -21,11 +21,10 @@
   ## Pre-Layout
   To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal
   
- '''javascript
-$  sudo apt install -y git
+'$  sudo apt install -y git
 $  git clone https://github.com/akpatro-github/sram
-$  cd sram
-'''
+$  cd sram'
+
    In this section I have represented the DC analysis and Transient Analysis of the 6T-SRAM cell which i have simulated using NGSpice.
    ### 6T-SRAM Memory cell
   **Circuit Diagram**
