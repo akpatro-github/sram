@@ -1,8 +1,8 @@
 # CMOS SRAM IP in MOSIS 0.5um CMOS Technology
 ## Table of Contents
-- SRAM Desgin
-- Block Diagram
-- Pre-Layout
+- [SRAM Desgin](https://github.com/akpatro-github/sram#SRAM-Design)
+- [Block Diagram](https://github.com/akpatro-github/sram#Block-Diagram)
+- [Pre-Layout](https://github.com/akpatro-github/sram#Pre-layout)
   - 6T-SRAM Memory cell
   - Precharge circuit
   - Sense Amplifier
