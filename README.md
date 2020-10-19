@@ -23,7 +23,7 @@
 ```
 $  sudo apt install -y git
 $  git clone https://github.com/akpatro-github/sram
-$  cd sram
+$  cd sram/pre_layout_netlist/testbench
 ```
    In this section I have represented the DC analysis and Transient Analysis of the 6T-SRAM cell which i have simulated using NGSpice.
    ### 6T-SRAM Memory cell
@@ -34,19 +34,23 @@ $  cd sram
   
   
   **DC Analysis**
-  
+  ```
+  $ ngspice tb_dc.sp
+  ```
   ![Dc sim](https://user-images.githubusercontent.com/71965706/94514148-1cd6d000-023e-11eb-8fc0-00866ce9f399.png)
 
   From the Dc Analysis we can get the operating point of the CMOS Inverters and we can also get the Design Margin for the pull-up and pull-down device by performing write operatrion. 
   
   **Circuit Daigram of SRAM cell with all Parasitcs**
-  
+
   ![sram_parasitcs](https://user-images.githubusercontent.com/71965706/94519493-3715ab80-0248-11eb-9020-a3098cc748f5.png)
 
-  In the above circuit diagram the M1, M2, M3 mosfets are used for pre-charging the Bit and complementary Bit line. M4 and M5 mosfets are used at the time of write operation. As 1k 32-bit SRAM consists of 32k of bit cells, so it can taken as 128*256(i.e. 128 number of rows and 256 number of columns). For Simulation we are taking one 6T SRAM cell with the parasitic capacitor of all the cells. cw1 ,cw2 ,cw3 are the wire load capacitors(10fF/cell) which are connected to bit, complementary bit and word line. Simillarly M6, M7, M8, M9 are the parasitic mosfets whose total capacitance is equal to the 1k 32-bit cell array. 
+  In the above circuit diagram consists of SRAM_6T cell with all its parasitics and precharged circuit, where the M1, M2, M3 mosfets are used for pre-charging the Bit and complementary Bit line. M4 and M5 mosfets are used at the time of write operation. As 1k 32-bit SRAM consists of 32k of bit cells, so it can taken as 128*256(i.e. 128 number of rows and 256 number of columns). For Simulation we are taking one 6T SRAM cell with the parasitic capacitor of all the cells. cw1 ,cw2 ,cw3 are the wire load capacitors(10fF/cell) which are connected to bit, complementary bit and word line. Simillarly M6, M7, M8, M9 are the parasitic mosfets whose total capacitance is equal to the 1k 32-bit cell array. 
   
   **Transient Analysis**
-  
+  ```
+   $ ngspice tb_tran.sp
+  ```
   ![SRAM_sim](https://user-images.githubusercontent.com/71965706/94520666-472e8a80-024a-11eb-9492-f35dc69cfd40.png)
   
 In the above simulation i have done a Write-Read-write operation. Red one is my input signal to Pre-charge circuit. Blue colur represents the word line signal , next 2 signals represents the bit and complemet bit signal and last two signals represents the internal node volatages which stored in the cell.
