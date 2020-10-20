@@ -2,7 +2,7 @@
 ## Table of Contents
 - [SRAM Desgin](https://github.com/akpatro-github/sram#SRAM-Design)
 - [Block Diagram](https://github.com/akpatro-github/sram#Block-Diagram)
-- [Custom cells required for OpenRAM](https://github.com/akpatro-github/Custom-cells-required-for-OpenRAM)
+- [Custom cells required for OpenRAM](https://github.com/akpatro-github#Custom-cells-required-for-OpenRAM)
 - [Pre-Layout](https://github.com/akpatro-github/sram#Pre-layout)
   - 6T-SRAM Memory cell
   - Precharge circuit
