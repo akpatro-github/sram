@@ -52,7 +52,7 @@ $  cd sram/pre_layout_netlist/testbench
   ```
   $ ngspice snm_read.sp
   ```
-  ![snm_read](https://user-images.githubusercontent.com/71965706/96470989-7c783800-124c-11eb-99f3-82645926ab30.png)
+![snm_read](https://user-images.githubusercontent.com/71965706/96537145-3609f400-12b3-11eb-9d63-2443f39e6f15.png)
   
   **Circuit Daigram of SRAM cell with all Parasitcs**
 
