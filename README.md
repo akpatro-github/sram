@@ -43,11 +43,15 @@ $  cd sram/pre_layout_netlist/testbench
   
   ### 6T cell Stability
   ***Hold SNM***
-  
+  ```
+  $ ngspice snm_hold.sp
+  ```
   ![snm_hold](https://user-images.githubusercontent.com/71965706/96468772-1b4f6500-124a-11eb-842e-e0a1d4b05bab.png)
   
   ***Read SNM***
-  
+  ```
+  $ ngspice snm_read.sp
+  ```
   ![snm_read](https://user-images.githubusercontent.com/71965706/96470989-7c783800-124c-11eb-99f3-82645926ab30.png)
   
   **Circuit Daigram of SRAM cell with all Parasitcs**
