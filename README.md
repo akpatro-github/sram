@@ -45,7 +45,7 @@ $  cd sram/pre_layout_netlist/testbench
 ### 6T-SRAM Memory cell
   **Circuit Diagram**
   
-  ![SRAM_6t](https://user-images.githubusercontent.com/71965706/94513996-b6ea4880-023d-11eb-81be-3733cea20c55.png)
+![SRAM_6t](https://user-images.githubusercontent.com/71965706/96550231-382d7c00-12ce-11eb-95e7-e4aac9ccbe42.png)
   
   **DC Analysis**
   ```
