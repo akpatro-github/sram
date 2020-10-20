@@ -52,6 +52,9 @@ $  cd sram/pre_layout_netlist/testbench
   ![snm_hold](https://user-images.githubusercontent.com/71965706/96468772-1b4f6500-124a-11eb-842e-e0a1d4b05bab.png)
   
   ***Read SNM***
+  
+  ![snm_read](https://user-images.githubusercontent.com/71965706/96537701-8d5c9400-12b4-11eb-9cdd-57a2dcb1b334.png)
+  
   ```
   $ ngspice snm_read.sp
   ```
