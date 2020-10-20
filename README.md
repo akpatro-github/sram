@@ -43,6 +43,8 @@ $  cd sram/pre_layout_netlist/testbench
   
   ### 6T cell Stability
   ***Hold SNM***
+  ![snm_hold](https://user-images.githubusercontent.com/71965706/96537268-723d5480-12b3-11eb-8a28-a5287f05e7d5.png)
+  
   ```
   $ ngspice snm_hold.sp
   ```
