@@ -12,7 +12,7 @@
   
   ## SRAM Design
     The project is generally focused on the design of 1k*32-bit 6T SRAM memory using [OpenRAM](https://www.openidentityplatform.org/openam) compiler.For the design of the custom memory array, OpenRAM memory compiler takes in Spice nelist file and Layout file to generate a SRAM memory cell.
-   - SRAM Specification - Memory Size of 1k 32-bit, Operating voltage - 5V, Technology PDK file - 0.5um SCMOS Technology from MOSIS, Access time less than 30ns 
+   - SRAM Specification - Memory Size of 1k*32-bit, Operating voltage - 5V, Technology PDK file - 0.5um SCMOS Technology from MOSIS, Access time less than 30ns 
      - For more information on OpenRAM compiler please [click here](https://github.com/mguthaus/OpenRAM/blob/master/OpenRAM_ICCAD_2016_paper.pdf "OpenRAM")
    ## Block Diagram
 ![block dia](https://user-images.githubusercontent.com/71965706/94511998-881da380-0238-11eb-91c3-ffe9e7b702da.png)
@@ -29,9 +29,7 @@ $  cd sram/pre_layout_netlist/testbench
    ### 6T-SRAM Memory cell
   **Circuit Diagram**
   
-  
   ![SRAM_6t](https://user-images.githubusercontent.com/71965706/94513996-b6ea4880-023d-11eb-81be-3733cea20c55.png)
-  
   
   **DC Analysis**
   ```
@@ -42,7 +40,7 @@ $  cd sram/pre_layout_netlist/testbench
   From the Dc Analysis we can get the operating point of the CMOS Inverters and we can also get the Design Margin for the pull-up and pull-down device by performing write operatrion. 
   
   ### 6T cell Stability
-  ***Hold SNM***
+  **Hold SNM**
   
   ![snm_hold](https://user-images.githubusercontent.com/71965706/96537268-723d5480-12b3-11eb-8a28-a5287f05e7d5.png)
   
@@ -51,7 +49,7 @@ $  cd sram/pre_layout_netlist/testbench
   ```
   ![snm_hold](https://user-images.githubusercontent.com/71965706/96468772-1b4f6500-124a-11eb-842e-e0a1d4b05bab.png)
   
-  ***Read SNM***
+  **Read SNM**
   
   ![snm_read](https://user-images.githubusercontent.com/71965706/96537701-8d5c9400-12b4-11eb-9cdd-57a2dcb1b334.png)
   
