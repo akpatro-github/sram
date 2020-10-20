@@ -16,6 +16,12 @@
    The project is generally focused on the design of 1k*32-bit 6T SRAM memory using [OpenRAM](https://www.openidentityplatform.org/openam) compiler.For the design of the custom memory array, OpenRAM memory compiler takes in Spice nelist file and Layout file to generate a SRAM memory cell.
    - SRAM Specification - Memory Size of 1k*32-bit, Operating voltage - 5V, Technology PDK file - 0.5um SCMOS Technology from MOSIS, Access time less than 30ns 
      - For more information on OpenRAM compiler please [click here](https://github.com/mguthaus/OpenRAM/blob/master/OpenRAM_ICCAD_2016_paper.pdf "OpenRAM")
+
+ 
+ ## Block Diagram
+ ![block dia](https://user-images.githubusercontent.com/71965706/94511998-881da380-0238-11eb-91c3-ffe9e7b702da.png)
+
+  The SRAM block consists of 8 major blocks:The bit-cell array, Address Decoder, Sense Amplifier, Word-line driver, Bit-cell precharge circuit, Writ Driver, Control logic and column MUX. In this project i have designed and characterised the Bit-cell array that all the devices of SRAM-6T cell using NGSpice tool with 0.5um SCMOS technology from MOSIS.
  ## Custom cells required for OpenRAM
  
  ![openram](https://user-images.githubusercontent.com/71965706/96538496-466f9e00-12b6-11eb-92b1-f2f4bb3da465.png)
@@ -26,11 +32,8 @@
  - Tristate Buffer
  - D-Flipflop
  
- ## Block Diagram
- ![block dia](https://user-images.githubusercontent.com/71965706/94511998-881da380-0238-11eb-91c3-ffe9e7b702da.png)
+## Pre-Layout
 
-  The SRAM block consists of 8 major blocks:The bit-cell array, Address Decoder, Sense Amplifier, Word-line driver, Bit-cell precharge circuit, Writ Driver, Control logic and column MUX. In this project i have designed and characterised the Bit-cell array that all the devices of SRAM-6T cell using NGSpice tool with 0.5um SCMOS technology from MOSIS.
-  ## Pre-Layout
   To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal
 ```
 $  sudo apt install -y git
@@ -38,7 +41,8 @@ $  git clone https://github.com/akpatro-github/sram
 $  cd sram/pre_layout_netlist/testbench
 ```
    In this section I have represented the DC analysis and Transient Analysis of the 6T-SRAM cell which i have simulated using NGSpice.
-   ### 6T-SRAM Memory cell
+
+### 6T-SRAM Memory cell
   **Circuit Diagram**
   
   ![SRAM_6t](https://user-images.githubusercontent.com/71965706/94513996-b6ea4880-023d-11eb-81be-3733cea20c55.png)
