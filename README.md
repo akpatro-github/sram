@@ -70,7 +70,7 @@ $  cd sram/pre_layout_netlist/testbench
   
   **Read SNM**
   
-  ![snm_read](https://user-images.githubusercontent.com/71965706/96537701-8d5c9400-12b4-11eb-9cdd-57a2dcb1b334.png)
+![snm_read](https://user-images.githubusercontent.com/71965706/96537701-8d5c9400-12b4-11eb-9cdd-57a2dcb1b334.png)
   
   ```
   $ ngspice snm_read.sp
@@ -85,10 +85,8 @@ $  cd sram/pre_layout_netlist/testbench
   Here  I have done a Transiant analysis(excluding sense Amp and write driver).
   
   **Transient Analysis**
-  ```
-   $ ngspice tb_tran.sp
-  ```
-  ![SRAM_sim](https://user-images.githubusercontent.com/71965706/94520666-472e8a80-024a-11eb-9492-f35dc69cfd40.png)
+
+![SRAM_sim](https://user-images.githubusercontent.com/71965706/94520666-472e8a80-024a-11eb-9492-f35dc69cfd40.png)
   
    In the above simulation i have done a Write-Read-write operation. Red colored one is my input signal to Pre-charge circuit. Blue colored one represents the word line signal, next 2 signals represents the BIT and complemet BIT signal and last two signals represents the internal node volatages which stored in the cell(i.e. q and qbar).
    I have calculated the maximum volatages variation at internal node(which is happening in the time of Read Operation) for different [PVT](https://in.search.yahoo.com/search?fr=mcafee&type=D210IN662G0&p=pvt+corner+in+vlsi) corners(i.e. SS, NOM & FF corner) and for the temperature -40C,25C and 105C.
@@ -114,7 +112,9 @@ $  cd sram/pre_layout_netlist/testbench
 ![write_driver](https://user-images.githubusercontent.com/71965706/94522716-b48fea80-024d-11eb-8e7a-538e793c3781.png)
 
 ## Simulation of 6T-SRAM cell with write driver and sense amplifier
-
+  ```
+   $ ngspice tb_tran.sp
+  ```
 ![clk sync](https://user-images.githubusercontent.com/71965706/94522882-fae54980-024d-11eb-91bf-f5a0534491ce.png)
 
 ### Installing EDA Tools in your device
