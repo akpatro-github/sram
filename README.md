@@ -20,6 +20,12 @@
  
  ![openram](https://user-images.githubusercontent.com/71965706/96538496-466f9e00-12b6-11eb-92b1-f2f4bb3da465.png)
  
+ - SRAM Bit cell
+ - Sense Amplifier
+ - Write Driver
+ - Tristate Buffer
+ - D-Flipflop
+ 
  ## Block Diagram
  ![block dia](https://user-images.githubusercontent.com/71965706/94511998-881da380-0238-11eb-91c3-ffe9e7b702da.png)
 
