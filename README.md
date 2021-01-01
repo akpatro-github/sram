@@ -30,9 +30,6 @@
   The SRAM block consists of 8 major blocks:The bit-cell array, Address Decoder, Sense Amplifier, Word-line driver, Bit-cell precharge circuit, Writ Driver, Control logic and column MUX. In this project i have designed and characterised the Bit-cell array that all the devices of SRAM-6T cell using NGSpice tool with 0.5um SCMOS technology from MOSIS.
 
 ## Custom cells required for OpenRAM
- 
- ![openram](https://user-images.githubusercontent.com/71965706/96538496-466f9e00-12b6-11eb-92b1-f2f4bb3da465.png)
- 
  - SRAM Bit cell
  - Sense Amplifier
  - Write Driver
