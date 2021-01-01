@@ -1,6 +1,7 @@
 # CMOS SRAM IP in MOSIS 0.5um CMOS Technology
 ## Table of Contents
 - [SRAM Desgin](https://github.com/akpatro-github/sram#SRAM-Design)
+- [Flow Chart](#Flow-Chart)
 - [Block Diagram](https://github.com/akpatro-github/sram#Block-Diagram)
 - [Custom cells required for OpenRAM](https://github.com/akpatro-github/sram#Custom-cells-required-for-OpenRAM)
 - [Pre-Layout](https://github.com/akpatro-github/sram#Pre-layout)
@@ -20,6 +21,8 @@
    - SRAM Specification - Memory Size of 1k*32-bit, Operating voltage - 5V, Technology PDK file - 0.5um SCMOS Technology from MOSIS, Access time less than 30ns 
      - For more information on OpenRAM compiler please [click here](https://github.com/mguthaus/OpenRAM/blob/master/OpenRAM_ICCAD_2016_paper.pdf "OpenRAM")
 
+ ## Flow Chart
+ ![Flow Chart](https://github.com/akpatro-github/sram/blob/master/Diagrams/Block%20Diagram/flow_chart.png)
  
  ## Block Diagram
  ![block dia](https://user-images.githubusercontent.com/71965706/94511998-881da380-0238-11eb-91c3-ffe9e7b702da.png)
