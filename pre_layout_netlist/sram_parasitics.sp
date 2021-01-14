@@ -5,7 +5,7 @@ xi1 gnd vdd bl blb wl sram_6T
 *******Wire Load Cap*******
 cw1 bl 0 1270f
 cw2 blb 0 1270f
-cw3 wl 0 5100f
+cw3 wl 0 2500f
 
 *******Pre-charge Circuit******
 mp1 bl  pc  vdd vdd p w=3u l=0.4u m=1
