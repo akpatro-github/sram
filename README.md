@@ -1,51 +1,53 @@
 # CMOS SRAM IP in MOSIS 0.5um CMOS Technology
 ## Table of Contents
-- [SRAM Desgin](https://github.com/akpatro-github/sram#SRAM-Design)
-- [Flowchart](#Flowchart)
-- [Block Diagram](https://github.com/akpatro-github/sram#Block-Diagram)
-- [Custom cells required for OpenRAM](https://github.com/akpatro-github/sram#Custom-cells-required-for-OpenRAM)
-- [Pre-Layout](https://github.com/akpatro-github/sram#Pre-layout)
-  - [6T-SRAM Memory cell](https://github.com/akpatro-github/sram#6T-SRAM-Memory-cell)
-  - [Precharge circuit]
-  - [Sense Amplifier](https://github.com/akpatro-github/sram#Sense-Amlifier)
-  - [Write Driver](https://github.com/akpatro-github/sram#Write-Driver)
-  - Tri-state Buffer
-  - D-Flipflop
-- Post-Layout
-- [Installing EDA Tools in your device](https://github.com/akpatro-github/sram#Installing-EDA-Tools-in-your-device)
-- Future work  
-  
- ## SRAM Design
-   
-   The project is generally focused on the design of 1k*32-bit 6T SRAM memory using [OpenRAM](https://www.openidentityplatform.org/openam) compiler.For the design of the custom memory array, OpenRAM memory compiler takes design rules, custom cells to generate a SRAM memory cell.
-   - SRAM Specification - Memory Size of 1k*32-bit, Operating voltage - 5V, Technology PDK file - 0.5um SCMOS Technology from MOSIS, Access time less than 30ns 
-     - For more information on OpenRAM compiler please [click here](https://github.com/mguthaus/OpenRAM/blob/master/OpenRAM_ICCAD_2016_paper.pdf "OpenRAM")
+- [Introduction](https://github.com/akpatro-github/sram#Introduction)
+- [Flowchart](https://github.com/akpatro-github/sram#Flowchart)
+- [Description](https://github.com/akpatro-github/sram#Description)
+- [Directory Structure](https://github.com/akpatro-github/sram#Directory-Structure)
+- [EDA Setup](https://github.com/akpatro-github/sram#EDA-setup)
+- [Acknowledgement](https://github.com/akpatro-github/sram#Acknowledgement)
 
- ## Flowchart
- ![Flowchart](https://github.com/akpatro-github/sram/blob/master/Diagrams/Block%20Diagram/flow_chart.png)
- 
- ## Block Diagram
- ![block dia](https://user-images.githubusercontent.com/71965706/94511998-881da380-0238-11eb-91c3-ffe9e7b702da.png)
+## Introduction
+This project throws light on Designing of 1kx32-bit 6T SRAM memory using [OpenRAM](https://www.openidentityplatform.org/openam) compiler. 
+ - **SRAM Specification** 
+	 -  Memory Size --> 1kx32-bit
+	 - Technology PDK file --> 0.4um SCMOS Technology from MOSIS
+	 -  Operating voltage --> 5V
+	 - Access time --> less than 30ns
+## Flow Chart
+ Below flow chart gives a complete idea of project.
 
-  The SRAM block consists of 8 major blocks:The bit-cell array, Address Decoder, Sense Amplifier, Word-line driver, Bit-cell precharge circuit, Writ Driver, Control logic and column MUX. In this project i have designed and characterised the Bit-cell array that all the devices of SRAM-6T cell using NGSpice tool with 0.5um SCMOS technology from MOSIS.
+![Flowchart](https://github.com/akpatro-github/sram/blob/master/Diagrams/Block%20Diagram/flow_chart.png)
 
-## Custom cells required for OpenRAM
- - SRAM Bit cell
- - Sense Amplifier
- - Write Driver
- - Tristate Buffer
- - D-Flipflop
- 
+## Description
+### Tools Used
 
-### Installing EDA Tools in your device
+ - **NgSpice** - Ngspice is a mixed-level/mixed-signal [electronic circuit simulator](https://en.wikipedia.org/wiki/Electronic_circuit_simulation). It is a successor of the latest stable release of Berkeley [SPICE](https://en.wikipedia.org/wiki/SPICE "SPICE"), version [3f.5](http://embedded.eecs.berkeley.edu/pubs/downloads/spice/index.htm), which was released in 1993. Ngspice is based on three [open-source](https://en.wikipedia.org/wiki/Open-source_software "Free-software")  [free-software](https://en.wikipedia.org/wiki/Free-software) packages: [Spice3f5](http://embedded.eecs.berkeley.edu/pubs/downloads/spice/index.htm), [Xspice](http://ngspice.sourceforge.net/xspice.html) and [Cider1b1](http://www.eecs.berkeley.edu/Pubs/TechRpts/1993/2382.htm)
+	-   [SPICE](https://en.wikipedia.org/wiki/SPICE) is the origin of all electronic circuit simulators, its successors are widely used in the electronics community.
+	-   [Xspice](https://en.wikipedia.org/wiki/Ngspice#cite_note-5)  is an extension to Spice3 that provides additional C language code models to support analog behavioral modeling and co-simulation of digital components through a fast event-driven algorithm.
+	-   [Cider](https://en.wikipedia.org/wiki/Ngspice#cite_note-6)  adds a numerical device simulator to ngspice. It couples the circuit-level simulator to the device simulator to provide enhanced simulation accuracy (at the expense of increased simulation time). Critical devices can be described with their technology parameters (numerical models), all others may use the original ngspice compact models.
+	 
+ - **Magic** - Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl. Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies. The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow.
+ -  **OpenRAM** - OpenRAM is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design. OpenRAM supports integration in both commercial and open-source flows with both predictive and fabricable technologies. For more information on OpenRAM compiler please [click here](https://github.com/mguthaus/OpenRAM/blob/master/OpenRAM_ICCAD_2016_paper.pdf "OpenRAM")
+### Input And Output Files for the tools 
+
+![Flowchart](https://github.com/akpatro-github/sram/blob/master/Diagrams/Block%20Diagram/flow_chart.png)
+
+## Directory Structure
+```bash
+<HOME_DIR> [eg. /home/vlsi]
+   ├── sram	[Git repo]
+	   ├── OpenRAM_sizing [Sizing of all devices taken from OpenRAM]
+		   ├──
+		   ├──
+       ├── SRAM_sizing	[SRAM Sizing has done mannualy]
+	       ├──
+	       ├──
+```
+## EDA Setup
 - To Download EDA tools(NGSpice, Magic, Netgen) on your System clone the repo and follow the [Github page](https://www.github.com/silicon-vlsi/project2020).
 **Clone the Repo**
 'git clone https://www.github.com/silicon-vlsi/project2020'
-
-
-## Future work
-- To create the layout using Magic.
-- To do post layout simulation.
-- And to compile the whole circuit using the OpenRAM compiler. 
-
-  
+## Acknowledgement
+- Dr.Saroj Rout, Associate Professor, Silicon Institute of Technology
+- Mr.Santunu sarangi, Assistant professor, Silicon Institute of Technology 
