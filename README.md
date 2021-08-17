@@ -31,7 +31,7 @@ This project throws light on Designing of 1kx32-bit 6T SRAM memory using [OpenRA
  -  **OpenRAM** - OpenRAM is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design. OpenRAM supports integration in both commercial and open-source flows with both predictive and fabricable technologies. For more information on OpenRAM compiler please [click here](https://github.com/mguthaus/OpenRAM/blob/master/OpenRAM_ICCAD_2016_paper.pdf "OpenRAM")
 ### Input And Output Files for the tools 
 
-![Flowchart](https://github.com/akpatro-github/sram/blob/master/Diagrams/Block%20Diagram/flow_chart.png)
+![i/o Files](https://github.com/akpatro-github/sram/blob/master/Diagrams/Block%20Diagram/sram_io.png)
 
 ## Directory Structure
 ```bash
