@@ -36,12 +36,12 @@ This project throws light on Designing of 1kx32-bit 6T SRAM memory using [OpenRA
 ## Directory Structure
 ```bash
    ├── sram	[Git repo]
-	   ├── OpenRAM_sizing [Sizing of all devices taken from OpenRAM]
-		   ├──
-		   ├──
-           ├── SRAM_sizing	[SRAM Sizing has done mannualy]
-	           ├──
-	           ├──
+   	├── OpenRAM_sizing [Sizing of all devices taken from OpenRAM]
+		├──
+		├──
+	├── SRAM_sizing	[SRAM Sizing has done mannualy]
+		├──
+		├──
 ```
 ## EDA Setup
 - To Download EDA tools(NGSpice, Magic, Netgen) on your System clone the repo and follow the [Github page](https://www.github.com/silicon-vlsi/project2020).
